@@ -1,0 +1,150 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  body
+
+  {
+  
+              width :100% ;
+  
+  }
+  
+   
+  
+  #global
+  
+  {
+  
+              width :80% ;
+  
+              margin :auto ;
+  
+              padding :25px ;
+  
+              background :#3c3c3c ;
+  
+  }
+  
+   
+  
+  header
+  
+  {
+  
+              width :100% ;
+  
+  }
+  
+  
+   
+  
+  #contenu
+  
+  {
+  
+              width :60% ;
+  
+              float :left ;
+  
+  }
+  
+   
+   
+  
+  footer
+  
+  {
+  
+              width :100%
+  
+  }
+
+  @media(min-width: 768px) and (max-width: 1388px)
+
+{
+
+ 
+
+#global
+
+{
+
+            width :100% ;
+
+            padding :0px ;
+
+}
+
+ 
+ 
+
+#contenu
+
+{
+
+            width :80% ;
+
+}
+
+ 
+
+}
+
+@media(max-width: 767px)
+
+{ 
+
+ 
+
+#global
+
+{
+
+            width :100% ;
+
+            padding :0px ;
+
+}
+
+ 
+
+
+ 
+
+#contenu
+
+{
+
+            width :100% ;
+
+}
+
+ 
+
+ 
+
+ 
+
+}
