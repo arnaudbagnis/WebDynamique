@@ -2,17 +2,17 @@
     <div >
         <div>
             <h1> <?php
-                print_r($data["title"]);
+                echo $data[0]["title"];
                 ?> </h1>
-            <p><?php
-                print_r($data["date"]);
-                ?></p>
+            <p>(<?php
+                echo $data[0]["releaseDate"];
+                ?>)</p>
             <nav >
                 <div >
                     <ul>
-                        <li ><a href="index.html">Home</a></li>
-                        <li><a href="actor.php">Acteur</a></li>
-                        <li class="active"><a href="director.php">Directeur</a></li>
+                        <li ><a href="home">Home</a></li>
+                        <li><a href="actor">Acteur</a></li>
+                        <li class="active"><a href="director">Directeur</a></li>
                     </ul>
                 </div>
             </nav>

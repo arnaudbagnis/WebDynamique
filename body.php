@@ -1,30 +1,29 @@
 <body>
-
+hello
 <p>
-<div> <? echo '<img src="https://media.senscritique.com/media/000016982986/150_200/Masaki_Kobayashi.jpg">'; ?> </div>
+    <div>
+        <? echo '<img src="https://media.senscritique.com/media/000016982986/150_200/Masaki_Kobayashi.jpg">'; ?>
+    </div>
 </p>
 <p>
-    Bio : <div><?php print_r($data["bio"]); ?>
-</div>
+    Bio : <div>
+            <?php echo $data[0]["biography"]; ?>
+    </div>
 </p>
 <p>
-    Nom : <div> <? print_r($data["nom"]); ?> </div>
+    Nom : <div>
+    <? echo $data[0]["lastname"]; ?>
+    </div>
 </p>
 <p>
-    Prénom : <div> <?php print_r($data["prenom"]); ?> </div>
+    Prénom : <div>
+    <?php echo $data[0]["firstname"]; ?>
+    </div>
 </p>
 <p>
-    date de naissance : <div> <?php print_r($data["date"]); ?></div>
+    date de naissance : <div>
+    <?php echo $data[0]["birthname"] ?>
+    </div>
 </p>
-<p>
-    filmographie : <div>
-    <ul>
-        <li> <?php print_r($data["filmo"]); ?></li>
-    </ul>
-</div>
-</p>
-
-
-
 
 </body>
