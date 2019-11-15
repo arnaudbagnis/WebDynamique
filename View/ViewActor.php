@@ -1,24 +1,22 @@
 <body>
 <section class="intro">
     <div class="column">
-        <h3>JOHN DOE</h3>
-        <img src="https://media.senscritique.com/media/000018467693/130_200/Tatsuya_Nakadai.jpg"
-             alt="hello"
-             title="tatsuta"
+        <h3> <?php
+            echo $data[0]['firstname'];
+            echo (" ");
+            echo $data[0]['lastname'];
+        ?></h3>
+        <img src=" <?echo $data[0]['image']; ?>"
              style="width: 183px;">
     </div>
     <div class="column">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla</p>
+
+        <p>
+            Née le : <?php echo $data[0]['birthname']; ?>
+        </p>
+        <p>
+            <?php echo $data[0]['biography']; ?>
+        </p>
     </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

@@ -9,10 +9,21 @@ function getBlock($file, $data = [])
 
 class Person
 {
-    function getBaseInfos(){
+    function getAllBaseInfos(){
         global $bdd;
         $reponse = $bdd->query('SELECT * FROM person');
         $data = $reponse->fetchAll();
+        return $data;
+    }
+
+    function getBaseInfos($lastname){
+          global $bdd;
+        $sql = 'SELECT *
+        FROM person
+        WHERE lastname < :lastname';
+        $sth = $bdd->prepare($sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+        $sth->execute(array(':lastname' => "$lastname"));
+        $data = $sth->fetchAll();
         return $data;
     }
 }
